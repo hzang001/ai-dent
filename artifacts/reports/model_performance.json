@@ -1,0 +1,159 @@
+{
+  "dataset": {
+    "n_samples": 716,
+    "n_features": 8,
+    "class_distribution": {
+      "positive": 162,
+      "negative": 554
+    },
+    "feature_columns": [
+      "biomarker_1",
+      "biomarker_2",
+      "biomarker_3",
+      "biomarker_4",
+      "biomarker_5",
+      "biomarker_6",
+      "biomarker_7",
+      "biomarker_8"
+    ]
+  },
+  "model_selection": {
+    "log_reg": {
+      "cv_metrics": {
+        "roc_auc": {
+          "mean": 0.6730542940205863,
+          "std": 0.06852658543799137
+        },
+        "average_precision": {
+          "mean": 0.36754143811447443,
+          "std": 0.06727791938591338
+        },
+        "accuracy": {
+          "mean": 0.6486498855835241,
+          "std": 0.051916577360778364
+        },
+        "precision": {
+          "mean": 0.35072943667628054,
+          "std": 0.04938412551676183
+        },
+        "recall": {
+          "mean": 0.636,
+          "std": 0.07293995260754241
+        },
+        "specificity": {
+          "mean": 0.6524004085801839,
+          "std": 0.06109404467018965
+        },
+        "f1_score": {
+          "mean": 0.4508459812807639,
+          "std": 0.052815391827370946
+        },
+        "balanced_accuracy": {
+          "mean": 0.6442002042900918,
+          "std": 0.050344769629570275
+        }
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "metrics": {
+            "roc_auc": 0.7515125324114089,
+            "average_precision": 0.4163999982833503,
+            "accuracy": 0.7043478260869566,
+            "precision": 0.4,
+            "recall": 0.6153846153846154,
+            "specificity": 0.7303370786516854,
+            "f1_score": 0.48484848484848486,
+            "balanced_accuracy": 0.6728608470181504
+          },
+          "best_params": {
+            "model__C": 1.0,
+            "model__penalty": "l1"
+          }
+        },
+        {
+          "fold": 2,
+          "metrics": {
+            "roc_auc": 0.5708729472774416,
+            "average_precision": 0.2654712025516442,
+            "accuracy": 0.5652173913043478,
+            "precision": 0.2692307692307692,
+            "recall": 0.5384615384615384,
+            "specificity": 0.5730337078651685,
+            "f1_score": 0.358974358974359,
+            "balanced_accuracy": 0.5557476231633535
+          },
+          "best_params": {
+            "model__C": 0.1,
+            "model__penalty": "l1"
+          }
+        },
+        {
+          "fold": 3,
+          "metrics": {
+            "roc_auc": 0.6844943820224719,
+            "average_precision": 0.33244621303679983,
+            "accuracy": 0.6491228070175439,
+            "precision": 0.3469387755102041,
+            "recall": 0.68,
+            "specificity": 0.6404494382022472,
+            "f1_score": 0.4594594594594595,
+            "balanced_accuracy": 0.6602247191011237
+          },
+          "best_params": {
+            "model__C": 0.1,
+            "model__penalty": "l1"
+          }
+        },
+        {
+          "fold": 4,
+          "metrics": {
+            "roc_auc": 0.7106643356643357,
+            "average_precision": 0.42088870962484004,
+            "accuracy": 0.6491228070175439,
+            "precision": 0.36538461538461536,
+            "recall": 0.7307692307692307,
+            "specificity": 0.625,
+            "f1_score": 0.48717948717948717,
+            "balanced_accuracy": 0.6778846153846154
+          },
+          "best_params": {
+            "model__C": 1.0,
+            "model__penalty": "l1"
+          }
+        },
+        {
+          "fold": 5,
+          "metrics": {
+            "roc_auc": 0.6477272727272728,
+            "average_precision": 0.40250106707573796,
+            "accuracy": 0.6754385964912281,
+            "precision": 0.37209302325581395,
+            "recall": 0.6153846153846154,
+            "specificity": 0.6931818181818182,
+            "f1_score": 0.463768115942029,
+            "balanced_accuracy": 0.6542832167832169
+          },
+          "best_params": {
+            "model__C": 10.0,
+            "model__penalty": "l1"
+          }
+        }
+      ]
+    }
+  },
+  "best_model": {
+    "name": "log_reg",
+    "holdout_metrics": {
+      "roc_auc": 0.6713076713076713,
+      "average_precision": 0.3643523225118816,
+      "accuracy": 0.6388888888888888,
+      "precision": 0.3442622950819672,
+      "recall": 0.6363636363636364,
+      "specificity": 0.6396396396396397,
+      "f1_score": 0.44680851063829785,
+      "balanced_accuracy": 0.638001638001638
+    }
+  },
+  "data_source": "https://github.com/ahmedshaban26/oral-cancer"
+}
