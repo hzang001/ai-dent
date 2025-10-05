@@ -189,7 +189,7 @@ def main() -> None:
         eval_steps=args.eval_steps,
         save_steps=args.save_steps,
         save_total_limit=2,
-        bf16=torch.cuda.is_available(),
+        #bf16=torch.cuda.is_available(),
         fp16=torch.cuda.is_available(),
         gradient_checkpointing=True,
         report_to=[],
